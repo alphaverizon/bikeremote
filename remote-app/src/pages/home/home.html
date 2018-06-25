@@ -1,0 +1,69 @@
+<ion-content class="plain-content">
+  <div class="top-content">
+    <div class="nav-title">
+      <div class="indication">
+          <img class="hamburger" src="assets/imgs/ham.svg"><span class="title-text">Metro e</span>
+      </div>
+    </div>
+    <ion-row justify-content-center>
+      <ion-col col-3>
+        <div class="indication message-container">
+          <img class="icon-indicate battery-adjust" src="assets/imgs/fuel.svg"><span class="indication-text textbattery">{{constants.FUEL}}</span>
+        </div>
+      </ion-col>
+      <ion-col col-5>
+          <div class="indication message-container">
+              <img class="icon-indicate " src="assets/imgs/km.svg"><span class="indication-text textkm">{{constants.KM}}</span>
+            </div>
+      </ion-col>
+      <ion-col col-4>
+          
+          <div class="indication message-container">
+              <img class="icon-indicate battery-adjust" src="assets/imgs/battery.svg"><span class="indication-text textbattery">{{constants.POWER}}</span>
+            </div>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="bottom-content">
+    <div class="message-container">
+        <p class="message-bar indication-text">{{constants.MESSAGE}}</p>
+    </div>
+    <ion-row class="ion-row-height">
+      <ion-col col-8>
+        <div class="control-container">
+          <img class="control-container-image" src="assets/imgs/bike.svg">
+          
+          <div class="control-flash controls" (click)="onControlClicked('flash')">
+              <img class="control-container-image" [attr.src]='flash ? assets+flash_on :assets+flash_off'>
+          </div>
+          
+          <div class="control-start controls" (click)="onControlClicked('start')">
+              <img class="control-container-image" [attr.src]='start ? assets+start_off :assets+start_on'>
+          </div>
+
+          <div class="control-find controls" (click)="onControlClicked('find')">
+              <img class="control-container-image" [attr.src]='find ? assets+find_on :assets+find_off'>
+          </div>
+
+          <div class="control-panic controls" (click)="onControlClicked('panic')">
+              <img class="control-container-image" [attr.src]='panic ? assets+panic_on :assets+panic_off'>
+          </div>
+
+          <div class="tyrepressure tyre-front">
+              <p class="message-bar indication-text">{{constants.TOP_TYRE}}</p>
+          </div>
+
+          <div class="tyrepressure tyre-back">
+              <p class="message-bar indication-text">{{constants.BOTTOM_TYRE}}</p>
+          </div>
+        </div>
+        
+      </ion-col>
+      <ion-col col-4>
+        <div class="lock-icon-div">
+            <img class="lock-icon" src="assets/imgs/lock.svg" (click)="onLockClicked()">
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
