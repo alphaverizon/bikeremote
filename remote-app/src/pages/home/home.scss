@@ -2,12 +2,14 @@ page-home {
     .top-content{
         background-color: #222f3a;
         width: 100%;
-        height: 16%;
+        height: 20%;
     }
     .bottom-content{
         background-color: #37424a;
         width: 100%;
-        height: 100%;
+        position: absolute;
+        bottom:0px;
+        left:0px;
     }
     .indication{
         padding: 5px;
