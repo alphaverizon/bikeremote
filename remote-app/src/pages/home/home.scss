@@ -2,12 +2,12 @@ page-home {
     .top-content{
         background-color: #222f3a;
         width: 100%;
-        height: 20%;
+        height: 25%;
     }
     .bottom-content{
         background-color: #37424a;
         width: 100%;
-        position: absolute;
+        position: initial;
         bottom:0px;
         left:0px;
     }
@@ -25,7 +25,7 @@ page-home {
         width: 25%;
     }
     .plain-content{
-        background-color: #222f3a;
+        background-color: #37424a;
     }
     .hamburger{
         width: 7%;
